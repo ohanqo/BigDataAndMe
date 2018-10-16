@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BigDataAndMe</string>
+    <string name="drawer_title">Drawer</string>
+    <string name="item_01">Item — 01</string>
+    <string name="item_02">Item — 02</string>
+    <string name="item_03">Item — 03</string>
 </resources>
