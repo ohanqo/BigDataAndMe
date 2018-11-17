@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_title_margin_top"
+        android:layout_marginStart="@dimen/login_title_margin"
+        android:layout_marginEnd="@dimen/login_title_margin"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_xxl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailEditText"
+        android:layout_alignStart="@id/emailEditText"
+        android:layout_marginBottom="@dimen/login_label_margin_bottom"
+        android:text="@string/email_label"
+        android:textSize="@dimen/font_sm"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:fontFamily="@font/circular_book"
+        android:labelFor="@id/emailEditText" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/login_input_margin"
+        android:layout_marginBottom="@dimen/login_input_margin_bottom"
+        android:textSize="@dimen/font_lg"
+        android:textColor="@color/white"
+        android:fontFamily="@font/circular_book"
+        android:inputType="textEmailAddress"
+        android:autofillHints="@string/email_hint"
+        android:drawableStart="@drawable/mail_16"
+        android:drawablePadding="@dimen/login_input_drawable_padding"
+        android:padding="@dimen/login_input_padding"
+        android:paddingStart="@dimen/login_input_padding_side"
+        android:paddingEnd="@dimen/login_input_padding_side"
+        android:background="@color/white_50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/passwordEditText"
+        android:layout_alignStart="@id/passwordEditText"
+        android:layout_marginBottom="@dimen/login_label_margin_bottom"
+        android:text="@string/password_label"
+        android:textSize="@dimen/font_sm"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:fontFamily="@font/circular_book"
+        android:labelFor="@id/passwordEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/login_input_margin"
+        android:textSize="@dimen/font_lg"
+        android:textColor="@color/white"
+        android:fontFamily="@font/circular_book"
+        android:inputType="textPassword"
+        android:autofillHints="@string/password_hint"
+        android:drawableStart="@drawable/lock_16"
+        android:drawablePadding="@dimen/login_input_drawable_padding"
+        android:padding="@dimen/login_input_padding"
+        android:paddingStart="@dimen/login_input_padding_side"
+        android:paddingEnd="@dimen/login_input_padding_side"
+        android:background="@color/white_50" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_lg"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/login_button_margin"
+        android:layout_marginStart="@dimen/login_button_margin"
+        android:layout_marginEnd="@dimen/login_button_margin"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/rounded_btn_padding"
+        android:paddingBottom="@dimen/rounded_btn_padding"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_button_register_margin_bottom"
+        android:text="@string/register_button"
+        android:textSize="@dimen/font_lg"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

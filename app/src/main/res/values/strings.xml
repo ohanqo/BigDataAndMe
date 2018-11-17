@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BigDataAndMe</string>
+    <string name="login_title">Big Data &amp; Moi</string>
+    <string name="login_button">Se connecter</string>
+    <string name="register_button">S\'inscrire</string>
+    <string name="email_label">Adresse mail</string>
+    <string name="email_hint">me@bigdata.com</string>
+    <string name="password_label">Mot de passe</string>
+    <string name="password_hint">Votre mot de passe</string>
 </resources>
