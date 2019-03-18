@@ -19,5 +19,7 @@
     <dimen name="login_input_drawable_padding">20dp</dimen>
     <dimen name="login_button_margin">100dp</dimen>
     <dimen name="login_button_register_margin_bottom">25dp</dimen>
-
+  
+    <dimen name="drawer_title_height">160dp</dimen>
+    <dimen name="drawer_title_padding">16dp</dimen>
 </resources>
